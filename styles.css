@@ -1,0 +1,315 @@
+/* ==== Global Styles ==== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  padding-top: 70px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0d3b66;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #0d3b66;
+  transition: color 0.2s ease;
+}
+
+a:hover, a:focus {
+  color: #d4af37;
+  text-decoration: underline;
+}
+
+/* ==== Colors ==== */
+.text-gold { color: #d4af37 !important; }
+.text-blue { color: #0d3b66 !important; }
+.bg-gold { background-color: #d4af37 !important; color: #fff !important; }
+.bg-blue { background-color: #0d3b66 !important; color: #fff !important; }
+
+/* ==== Navbar ==== */
+.navbar {
+  font-weight: 600;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  color: #d4af37 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #0d3b66;
+  margin-left: 1.2rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #d4af37;
+}
+
+.navbar-toggler {
+  border-color: #d4af37;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23d4af37' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ==== Dropdown ==== */
+.dropdown-menu {
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 1px solid #d4af37;
+  font-weight: 600;
+  background-color: #fff;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #d4af37;
+  color: #fff !important;
+}
+
+/* ==== Hero Section ==== */
+.hero-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  margin-top: 70px;
+}
+
+.shadow-text {
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.75);
+}
+
+/* ==== Content Sections ==== */
+.content-section {
+  background: #fff;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  margin-bottom: 3rem;
+}
+
+/* ==== Cards ==== */
+.card {
+  border-radius: 12px;
+  border: 2px solid #d4af37;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(212, 175, 55, 0.5);
+}
+
+.card-title {
+  color: #d4af37;
+  font-weight: 700;
+}
+
+/* ==== Gallery Cards ==== */
+.gallery-card img {
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ==== Buttons ==== */
+.btn-gold {
+  background-color: #d4af37;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  padding: 0.6rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-gold:hover,
+.btn-gold:focus {
+  background-color: #b08b2a;
+  color: #fff;
+}
+
+/* ==== Scroll to Top Button ==== */
+#scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0d3b66;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 12px 15px;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  z-index: 1100;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+#scrollToTop:hover {
+  background-color: #d4af37;
+}
+
+/* ==== Theme Toggle ==== */
+#themeToggle {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  background-color: #0d3b66;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease;
+  z-index: 1100;
+}
+
+#themeToggle:hover {
+  background-color: #d4af37;
+}
+
+/* ==== Sidebar ==== */
+.sidebar {
+  height: 100vh;
+  position: sticky;
+  top: 70px;
+  background-color: #f8f9fa;
+  padding-top: 1rem;
+  border-right: 2px solid #d4af37;
+  font-weight: 600;
+}
+
+.sidebar-nav .nav-link {
+  color: #0d3b66;
+  padding: 12px 20px;
+  border-radius: 0 25px 25px 0;
+  margin-bottom: 0.3rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-nav .nav-link:hover,
+.sidebar-nav .nav-link.active {
+  background-color: #d4af37;
+  color: #fff !important;
+}
+
+/* ==== Footer ==== */
+footer {
+  font-size: 0.9rem;
+  background-color: #121212;
+  color: #e0e0e0;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+footer h5 {
+  color: #d4af37;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #ccc;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+footer hr {
+  border-color: #444;
+}
+
+/* ==== Dark Theme ==== */
+.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-theme a {
+  color: #d4af37;
+}
+
+.dark-theme a:hover {
+  color: #fff;
+}
+
+.dark-theme .navbar,
+.dark-theme .dropdown-menu,
+.dark-theme .content-section,
+.dark-theme footer {
+  background-color: #1e1e1e;
+  color: #ddd;
+}
+
+.dark-theme .nav-link,
+.dark-theme .dropdown-item,
+.dark-theme .sidebar-nav .nav-link {
+  color: #d4af37 !important;
+}
+
+.dark-theme .nav-link.active,
+.dark-theme .nav-link:hover,
+.dark-theme .dropdown-item:hover,
+.dark-theme .sidebar-nav .nav-link.active,
+.dark-theme .sidebar-nav .nav-link:hover {
+  background-color: #d4af37 !important;
+  color: #121212 !important;
+}
+
+.dark-theme #scrollToTop,
+.dark-theme #themeToggle {
+  background-color: #d4af37;
+  color: #121212;
+}
+
+.dark-theme #scrollToTop:hover,
+.dark-theme #themeToggle:hover {
+  background-color: #b08b2a;
+  color: #fff;
+}
+
+/* ==== Utilities ==== */
+.text-center { text-align: center; }
+.mb-4 { margin-bottom: 1.5rem !important; }
+.mt-5 { margin-top: 3rem !important; }
+.py-5 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+.px-md-4 { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+  .sidebar {
+    height: auto;
+    position: relative;
+    border-right: none;
+  }
+
+  .hero-section {
+    height: 30vh;
+  }
+}
