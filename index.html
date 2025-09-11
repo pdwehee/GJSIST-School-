@@ -11,147 +11,231 @@
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Top Bar -->
+  <header class="bg-blue text-white py-2 small shadow-sm">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <div class="d-flex align-items-center gap-3 small">
+        <span><i class="bi bi-telephone"></i> +231 770 000 000</span>
+        <span><i class="bi bi-envelope"></i> info@gjsist.edu.lr</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a class="text-white" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a class="text-white" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a class="text-white" href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+  </header>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top border-bottom">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top border-bottom">
     <div class="container">
-      <a class="navbar-brand text-gold fw-bold" href="index.html">GJSIST</a>
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="images/logo.jpg" alt="" style="height:40px;width:auto;" class="d-inline-block align-text-top me-2" onerror="this.style.display='none'">
+        <span class="text-warning fw-bold h4 mb-0">GJSIST</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto fw-semibold">
           <li class="nav-item"><a class="nav-link active text-blue" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-blue" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link text-blue" href="programs.html">Programs</a></li>
-          <li class="nav-item"><a class="nav-link text-blue" href="admissions.html">Admissions</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-blue" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="overview.html">Overview</a></li>
+              <li><a class="dropdown-item" href="about.html">About</a></li>
+              <li><a class="dropdown-item" href="founder-messages.html">Founder Messages</a></li>
+              <li><a class="dropdown-item" href="finance.html">Finance Office</a></li>
+              <li><a class="dropdown-item" href="registrar.html">Office of the Registrar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-blue" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+            <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+              <li><a class="dropdown-item" href="bachelor.html">Bachelor Programs</a></li>
+              <li><a class="dropdown-item" href="associate.html">Associate Programs</a></li>
+              <li><a class="dropdown-item" href="business.html">Business College</a></li>
+              <li><a class="dropdown-item" href="medical.html">Medical College</a></li>
+              <li><a class="dropdown-item" href="education.html">College of Education</a></li>
+              <li><a class="dropdown-item" href="library.html">Library</a></li>
+              <li><a class="dropdown-item" href="academic.html">Academic Calendar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-blue" href="#" id="admissionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
+            <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
+              <li><a class="dropdown-item" href="admissions.html">How to Apply</a></li>
+              <li><a class="dropdown-item" href="graduate.html">Entry Requirements</a></li>
+              <li><a class="dropdown-item" href="diploma.html">Admission Cut-Off Points</a></li>
+              <li><a class="dropdown-item" href="scholarships.html">Undergraduate Admissions</a></li>
+              <li><a class="dropdown-item" href="graduate.html">Graduate Admissions</a></li>
+              <li><a class="dropdown-item" href="diploma.html">International Applicants</a></li>
+              <li><a class="dropdown-item" href="admissions.html">Apply Now</a></li>
+            </ul>
+          </li>
           <li class="nav-item"><a class="nav-link text-blue" href="portal.html">Portal</a></li>
           <li class="nav-item"><a class="nav-link text-blue" href="contact.html">Contact</a></li>
           <li class="nav-item"><a class="nav-link text-blue" href="gallery.html">Gallery</a></li>
         </ul>
-		
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero-section d-flex align-items-center justify-content-center text-center text-white" style="height: 75vh; background-size: cover; background-position: center;">
-    <div class="container">
-      <h1 id="hero-text" class="display-4 fw-bold shadow-text"></h1>
-      <p class="lead shadow-text">Empowering Liberia’s Next Generation of Innovators and Leaders</p>
-      <a href="programs.html" class="btn btn-gold btn-lg mt-3 fw-semibold">Explore Our Programs</a>
+
+
+
+  <!--  Hero Slideshow -->
+  <section id="hero" class="uds-hero-section position-relative">
+    <div class="uds-hero-slideshow">
+      <div class="uds-hero-slide active" style="background-image: url('images/uds-hero.jpg');">
+        <div class="uds-hero-overlay uds-hero-overlay-dark"></div>
+        <div class="container uds-hero-caption text-white">
+          <h1 class="display-5 fw-bold mb-3 uds-hero-text">Glory Joyce Stanley Institute of Science & Technology</h1>
+          <p class="lead mb-4 uds-hero-text" style="font-size:1.25rem;">Empowering Liberia’s Next Generation of Innovators and Leaders</p>
+          <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mt-4">
+            <a href="admissions.html" class="btn btn-hero-cta btn-lg fw-bold btn-hero-glow">Apply Now</a>
+            <a href="programs.html" class="btn btn-hero-cta btn-lg fw-bold btn-hero-glow">Explore Programs</a>
+          </div>
+        </div>
+      </div>
+      <div class="uds-hero-slide" style="background-image: url('images/campus2.jpg');">
+        <div class="uds-hero-overlay uds-hero-overlay-dark"></div>
+        <div class="container uds-hero-caption text-white">
+          <h1 class="display-3 fw-bold mb-3 uds-hero-text">Vibrant Campus Life</h1>
+          <p class="lead mb-4 uds-hero-text">A community of passionate learners and leaders</p>
+        </div>
+      </div>
+      <div class="uds-hero-slide" style="background-image: url('images/bg2.jpg');">
+        <div class="uds-hero-overlay uds-hero-overlay-dark"></div>
+        <div class="container uds-hero-caption text-white">
+          <h1 class="display-3 fw-bold mb-3 uds-hero-text">Business & Innovation</h1>
+          <p class="lead mb-4 uds-hero-text">Explore our Business College and digital programs</p>
+        </div>
+      </div>
+      <div class="uds-hero-slide" style="background-image: url('images/bg3.jpg');">
+        <div class="uds-hero-overlay uds-hero-overlay-dark"></div>
+        <div class="container uds-hero-caption text-white">
+          <h1 class="display-3 fw-bold mb-3 uds-hero-text">Education for the Future</h1>
+          <p class="lead mb-4 uds-hero-text">Training the next generation of educators</p>
+        </div>
+      </div>
+  <!-- Slideshow -->
     </div>
+    <svg class="position-absolute bottom-0 start-0 w-100" height="80" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="z-index:1;"><path d="M0,40 C480,120 960,0 1440,40 L1440,80 L0,80 Z" fill="#fff"/></svg>
   </section>
 
-  <!-- About Section -->
-  <section class="content-section py-5">
+
+  <!--  About Section: Left Slideshow, Right Text -->
+  <section class="content-section py-5 bg-light" id="about">
     <div class="container">
-      <h2 class="text-blue fw-bold mb-4">About Glory Joyce Stanley Institute of Science and Technology</h2>
-      <p class="lead">
-        GJSIST is dedicated to providing affordable, practical, and globally relevant education in science and technology. We prepare students for success through hands-on learning, experienced faculty, and a supportive community.
-      </p>
-      <a href="about.html" class="btn btn-outline-blue mt-3">Learn More About Us</a>
-    </div>
-  </section>
-
-<--News Sction -->
-  <section class="content-section py-5 bg-light">
-    <div class="container">
-        <h2 class="text-blue fw-bold mb-4 text-center">News & Events</h2>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="images/news1.jpg" class="card-img-top" alt="News Image 1">
-                    <div class="card-body">
-                        <h5 class="card-title text-gold">Career Fair 2025</h5>
-                        <p class="card-text text-muted small"><i class="bi bi-calendar-event me-2"></i>August 20, 2025</p>
-                        <p class="card-text">Join us for our annual career fair to meet top employers and explore internship opportunities.</p>
-                        <a href="#" class="btn btn-outline-blue btn-sm mt-2">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="images/news2.jpg" class="card-img-top" alt="News Image 2">
-                    <div class="card-body">
-                        <h5 class="card-title text-gold">New Digital Lab Opens</h5>
-                        <p class="card-text text-muted small"><i class="bi bi-calendar-event me-2"></i>August 1, 2025</p>
-                        <p class="card-text">GJSIST celebrates the grand opening of the state-of-the-art Digital Media & Technology Lab.</p>
-                        <a href="#" class="btn btn-outline-blue btn-sm mt-2">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title text-gold">Upcoming Events</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <a href="#" class="text-blue text-decoration-none fw-bold">Open House Day</a><br>
-                                <small class="text-muted"><i class="bi bi-calendar-event me-2"></i>Sept 5, 2025 - Campus Wide</small>
-                            </li>
-                            <li class="mb-2">
-                                <a href="#" class="text-blue text-decoration-none fw-bold">Scholarship Deadline</a><br>
-                                <small class="text-muted"><i class="bi bi-calendar-event me-2"></i>Sept 30, 2025</small>
-                            </li>
-                            <li class="mb-2">
-                                <a href="#" class="text-blue text-decoration-none fw-bold">Guest Lecture Series</a><br>
-                                <small class="text-muted"><i class="bi bi-calendar-event me-2"></i>Oct 15, 2025 - 10:00 AM</small>
-                            </li>
-                        </ul>
-                        <a href="calendar.html" class="btn btn-gold btn-sm mt-3">View All</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>	
-
-
-	
-
-  <!-- Programs Preview -->
-  <section class="content-section py-5 bg-light">
-    <div class="container">
-      <h2 class="text-blue fw-bold mb-4 text-center">Our Colleges & Programs</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 border-gold shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-gold">John Tokpa Kollie College of Health Sciences</h5>
-              <p>Medical Laboratory Technology, Physician Assistantship, and Midwifery (upon accreditation).</p>
-              <a href="programs.html#health" class="btn btn-gold btn-sm">Explore</a>
-            </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="uds-about-slideshow position-relative overflow-hidden">
+            <img src="images/campus1.jpg" class="img-fluid uds-about-slide active" alt="Campus 1" />
+            <img src="images/campus2.jpg" class="img-fluid uds-about-slide" alt="Campus 2" />
+            <img src="images/campus3.jpg" class="img-fluid uds-about-slide" alt="Campus 3" />
+            <!-- About slideshow navigation buttons removed -->
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-gold shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-gold">Kulubo Gbaway Kessellee Business College</h5>
-              <p>Business Management, Digital Accounting, and Marketing of Digital Media.</p>
-              <a href="programs.html#business" class="btn btn-gold btn-sm">Explore</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-gold shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-gold">Isaac Mulbah Lincoln College</h5>
-              <p>General Sciences Education and Early Childhood Education.</p>
-              <a href="programs.html#education" class="btn btn-gold btn-sm">Explore</a>
-            </div>
-          </div>
+        <div class="col-lg-6">
+          <h2 class="text-blue fw-bold mb-4">About Glory Joyce Stanley Institute of Science and Technology</h2>
+          <p class="lead">
+            GJSIST is dedicated to providing affordable, practical, and globally relevant education in science and technology. We prepare students for success through hands-on learning, experienced faculty, and a supportive community.
+          </p>
+          <a href="about.html" class="btn btn-outline-blue mt-3">Learn More About Us</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Admissions Preview -->
-  <section class="content-section py-5">
+
+  <!-- Opening Soon! -->
+  <section class="content-section py-5 bg-light" id="opening">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="mb-3 d-inline-block w-100">
+            <img src="images/open soon.jpeg" alt="Opening Soon" class="img-fluid mx-auto d-block" style="object-fit: contain; width: 100%; max-height: 800px; background: #f8f9fa;" />
+          </div>
+          <h2 class="display-5 fw-bold text-blue mt-3">Opening Soon!</h2>
+          <p class="lead text-muted">Stay tuned for updates on our official opening and admissions timeline.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--News Sections-->
+  <section class="content-section py-5 bg-light" id="news">
+    <div class="container">
+        <h2 class="text-blue fw-bold mb-4 text-center">News & Events</h2>
+      <div class="news-events-flex">
+        <div class="news-item news-detail-trigger" tabindex="0" role="button" data-title="Career Fair 2025" data-date="August 20, 2025" data-img="images/news1.jpg" data-content="Join us for our annual career fair to meet top employers and explore internship opportunities.">
+          <img src="images/news1.jpg" alt="Career Fair 2025" class="news-img mb-3">
+          <h5 class="news-title">Career Fair 2025</h5>
+          <p class="news-date"><i class="bi bi-calendar-event me-2"></i>August 20, 2025</p>
+          <p class="news-summary">Join us for our annual career fair to meet top employers and explore internship opportunities.</p>
+          <a href="#" class="btn btn-outline-blue btn-sm mt-2">Read More</a>
+        </div>
+        <div class="news-item news-detail-trigger" tabindex="0" role="button" data-title="New Digital Lab Opens" data-date="August 1, 2025" data-img="images/news2.jpg" data-content="GJSIST celebrates the grand opening of the state-of-the-art Digital Media & Technology Lab.">
+          <img src="images/news2.jpg" alt="New Digital Lab Opens" class="news-img mb-3">
+          <h5 class="news-title">New Digital Lab Opens</h5>
+          <p class="news-date"><i class="bi bi-calendar-event me-2"></i>August 1, 2025</p>
+          <p class="news-summary">GJSIST celebrates the grand opening of the state-of-the-art Digital Media & Technology Lab.</p>
+          <a href="#" class="btn btn-outline-blue btn-sm mt-2">Read More</a>
+        </div>
+        <div class="news-item">
+          <h5 class="news-title">Upcoming Events</h5>
+          <ul class="list-unstyled mb-3">
+            <li class="mb-2">
+              <a href="#" class="text-blue text-decoration-none fw-bold news-detail-trigger" data-title="Open House Day" data-date="Sept 5, 2025 - Campus Wide" data-img="images/news1.jpg" data-content="Experience GJSIST campus life, meet faculty, and tour our facilities during Open House Day!">Open House Day</a><br>
+              <small class="text-muted"><i class="bi bi-calendar-event me-2"></i>Sept 5, 2025 - Campus Wide</small>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-blue text-decoration-none fw-bold news-detail-trigger" data-title="Scholarship Deadline" data-date="Sept 30, 2025" data-img="images/news2.jpg" data-content="Don't miss the deadline to apply for scholarships and financial aid for the 2025/2026 academic year.">Scholarship Deadline</a><br>
+              <small class="text-muted"><i class="bi bi-calendar-event me-2"></i>Sept 30, 2025</small>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-blue text-decoration-none fw-bold news-detail-trigger" data-title="Guest Lecture Series" data-date="Oct 15, 2025 - 10:00 AM" data-img="images/news1.jpg" data-content="Join us for a special lecture series featuring distinguished guests and thought leaders.">Guest Lecture Series</a><br>
+              <small class="text-muted"><i class="bi bi-calendar-event me-2"></i>Oct 15, 2025 - 10:00 AM</small>
+            </li>
+          </ul>
+          <a href="calendar.html" class="btn btn-gold btn-sm">View All</a>
+        </div>
+  </section>	
+
+  <section class="content-section py-5 bg-light" id="programs">
+    <div class="container">
+      <h2 class="text-blue fw-bold mb-4 text-center">Our Colleges & Programs</h2>
+    <div class="row g-4">
+    <div class="col-md-4">
+      <h5 class="text-gold">John Tokpa Kollie College of Health Sciences</h5>
+      <p>Medical Laboratory Technology, Physician Assistantship, and Midwifery (upon accreditation).</p>
+      <a href="medical.html" class="btn btn-gold btn-sm">Explore</a>
+    </div>
+    <div class="col-md-4">
+      <h5 class="text-gold">Kulubo Gbaway Kessellee Business College</h5>
+      <p>Business Management, Digital Accounting, and Marketing of Digital Media.</p>
+      <a href="business.html" class="btn btn-gold btn-sm">Explore</a>
+    </div>
+    <div class="col-md-4">
+      <h5 class="text-gold">Isaac Mulbah Lincoln College of Education</h5>
+      <p>General Sciences Education and Early Childhood Education.</p>
+      <a href="education.html" class="btn btn-gold btn-sm">Explore</a>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="content-section py-5" id="admissions">
     <div class="container text-center">
       <h2 class="text-blue fw-bold mb-4">Admissions Now Open</h2>
       <p class="lead mb-4">Join GJSIST and take the first step towards a bright future. Our admissions process is simple, transparent, and student-friendly.</p>
@@ -159,44 +243,58 @@
     </div>
   </section>
 
-  <!-- Testimonials Section with Images -->
-  <section class="content-section py-5 bg-light">
+  <section class="content-section py-5 bg-light" id="testimonials">
     <div class="container">
       <h2 class="text-blue fw-bold text-center mb-4">What Our Students Say</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card shadow-sm h-100 text-center">
-            <img src="images/student1.jpg" alt="Josephine T." class="card-img-top rounded-circle mx-auto mt-4" style="width: 120px; height: 120px; object-fit: cover;" />
-            <div class="card-body">
-              <p class="card-text">"GJSIST has transformed my future. The practical learning environment and supportive professors helped me build real skills."</p>
-              <h6 class="card-subtitle text-muted mt-3">– Josephine T., Business Management</h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm h-100 text-center">
-            <img src="images/student2.jpg" alt="Daniel K." class="card-img-top rounded-circle mx-auto mt-4" style="width: 120px; height: 120px; object-fit: cover;" />
-            <div class="card-body">
-              <p class="card-text">"As a health sciences student, I gained hands-on training that gave me confidence for clinical practice."</p>
-              <h6 class="card-subtitle text-muted mt-3">– Daniel K., Medical Lab Tech</h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm h-100 text-center">
-            <img src="images/student3.jpg" alt="Grace M." class="card-img-top rounded-circle mx-auto mt-4" style="width: 120px; height: 120px; object-fit: cover;" />
-            <div class="card-body">
-              <p class="card-text">"The digital tools and modern curriculum prepared me for today’s job market. I’m proud to be part of GJSIST."</p>
-              <h6 class="card-subtitle text-muted mt-3">– Grace M., Digital Accounting</h6>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="row g-4">
+    <div class="col-md-4 text-center">
+      <img src="images/student1.jpg" alt="Josephine T." class="card-img-top rounded-circle mx-auto mt-4" style="width: 120px; height: 120px; object-fit: cover;" />
+      <p class="card-text">"GJSIST has transformed my future. The practical learning environment and supportive professors helped me build real skills."</p>
+      <h6 class="card-subtitle text-muted mt-3">– Josephine T., Business Management</h6>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="images/student2.jpg" alt="Daniel K." class="card-img-top rounded-circle mx-auto mt-4" style="width: 120px; height: 120px; object-fit: cover;" />
+      <p class="card-text">"As a health sciences student, I gained hands-on training that gave me confidence for clinical practice."</p>
+      <h6 class="card-subtitle text-muted mt-3">– Daniel K., Medical Lab Tech</h6>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="images/student3.jpg" alt="Grace M." class="card-img-top rounded-circle mx-auto mt-4" style="width: 120px; height: 120px; object-fit: cover;" />
+      <p class="card-text">"The digital tools and modern curriculum prepared me for today’s job market. I’m proud to be part of GJSIST."</p>
+      <h6 class="card-subtitle text-muted mt-3">– Grace M., Digital Accounting</h6>
+    </div>
+    </div>
     </div>
   </section>
 
-  <!-- Contact Preview -->
-  <section class="content-section py-5">
+  <section class="content-section py-5 bg-light" id="discover">
+    <div class="container">
+      <h2 class="text-blue fw-bold mb-4">Discover Our University</h2>
+    <div class="row g-4">
+    <div class="col-md-6">
+      <img src="images/campus1.jpg" class="card-img-top" alt="Campus Image 1">
+      <h5 class="card-title text-gold">State-of-the-Art Facilities</h5>
+      <p class="card-text">Explore our modern classrooms, labs, and learning spaces designed to enhance your educational experience.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="images/campus2.jpg" class="card-img-top" alt="Campus Image 2">
+      <h5 class="card-title text-gold">Vibrant Campus Life</h5>
+      <p class="card-text">Join a community of passionate learners and participate in clubs, events, and activities that enrich your college experience.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="images/campus3.jpg" class="card-img-top" alt="Campus Image 3">
+      <h5 class="card-title text-gold"><a href="faculty.html">Experienced Faculty</a></h5>
+      <p class="card-text">Learn from industry professionals and dedicated educators committed to your success.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="images/campus4.jpg" class="card-img-top" alt="Campus Image 4">
+      <h5 class="card-title text-gold"><a href="library.html">Our Library</a></h5>
+      <p class="card-text">Experience a welcoming environment where students, faculty, and staff work together to help you achieve your goals.</p>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="content-section py-5" id="contact-preview">
     <div class="container text-center">
       <h2 class="text-blue fw-bold mb-4">Get In Touch</h2>
       <p class="lead mb-4">Have questions or need more information? Contact our friendly support team.</p>
@@ -204,8 +302,7 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer bg-dark text-light pt-5">
+  <footer class="footer bg-dark text-light pt-5 mt-5 border-top">
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-4">
@@ -237,18 +334,11 @@
     </div>
   </footer>
 
-  <!-- Scroll to Top Button -->
-  <button id="scrollToTop" title="Go to top">↑</button>
-
-  <!-- Theme Toggle Button -->
-  <button id="themeToggle" title="Toggle Theme">Dark Mode</button>
+  <button id="scrollToTop" title="Go to top" aria-label="Scroll to top" class="btn btn-gold rounded-circle position-fixed" style="bottom: 30px; right: 30px; z-index: 999; display: none;">↑</button>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
   <!-- Custom JS -->
   <script src="script.js"></script>
-
 </body>
 </html>
-

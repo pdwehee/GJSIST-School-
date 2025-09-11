@@ -1,0 +1,64 @@
+<pptx>
+<slide>
+  <title>GJSIST School Website</title>
+  <subtitle>Presentation & Usage Summary</subtitle>
+  <footer>Glory Joyce Stanley Institute of Science and Technology</footer>
+</slide>
+<slide>
+  <title>Purpose of the Website</title>
+  <bullets>
+    <bullet>Provide information about GJSIST, its mission, and academic offerings</bullet>
+    <bullet>Showcase programs, admissions, news, and campus life</bullet>
+    <bullet>Enable prospective students to learn about and apply to the institute</bullet>
+    <bullet>Serve as a resource hub for students, parents, and staff</bullet>
+  </bullets>
+</slide>
+<slide>
+  <title>Key Features</title>
+  <bullets>
+    <bullet>Modern, responsive design using Bootstrap 5</bullet>
+    <bullet>Professional navigation bar with dropdown menus</bullet>
+    <bullet>Hero section with impactful welcome message and call-to-action buttons</bullet>
+    <bullet>News & Events, Testimonials, and Discover sections</bullet>
+    <bullet>Admissions and contact information easily accessible</bullet>
+    <bullet>Quick links and social media integration in the footer</bullet>
+  </bullets>
+</slide>
+<slide>
+  <title>User Experience</title>
+  <bullets>
+    <bullet>Easy navigation with clear menus and dropdowns</bullet>
+    <bullet>Mobile-friendly and accessible on all devices</bullet>
+    <bullet>Visually appealing sections with images, cards, and calls to action</bullet>
+    <bullet>Consistent color scheme and branding throughout</bullet>
+  </bullets>
+</slide>
+<slide>
+  <title>Content Overview</title>
+  <bullets>
+    <bullet><b>Home:</b> Welcome, About, Opening Soon, News, Programs, Admissions, Testimonials, Discover, Contact Preview</bullet>
+    <bullet><b>About:</b> Institute overview, mission, founder messages, finance, registrar</bullet>
+    <bullet><b>Programs:</b> Bachelor, Associate, Business, Medical, Education, Library, Academic Calendar</bullet>
+    <bullet><b>Admissions:</b> How to apply, requirements, scholarships, international applicants</bullet>
+    <bullet><b>Portal, Contact, Gallery:</b> Student portal, contact form, campus gallery</bullet>
+  </bullets>
+</slide>
+<slide>
+  <title>Technologies Used</title>
+  <bullets>
+    <bullet>HTML5, CSS3, Bootstrap 5.3.3</bullet>
+    <bullet>Bootstrap Icons, Font Awesome, Google Fonts (Montserrat)</bullet>
+    <bullet>Custom CSS and JavaScript for branding and interactivity</bullet>
+    <bullet>Responsive images and SVG graphics</bullet>
+  </bullets>
+</slide>
+<slide>
+  <title>Summary & Next Steps</title>
+  <bullets>
+    <bullet>Website is ready for users: informative, attractive, and easy to use</bullet>
+    <bullet>Can be further expanded with more dynamic features (e.g., student login, news updates)</bullet>
+    <bullet>Feedback from users will help guide future improvements</bullet>
+  </bullets>
+  <footer>&copy; 2025 Glory Joyce Stanley Institute of Science and Technology</footer>
+</slide>
+</pptx>

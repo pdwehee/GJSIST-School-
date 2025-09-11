@@ -16,20 +16,68 @@
 </head>
 <body>
 
+  <!-- Top Bar -->
+  <header class="bg-blue text-white py-2 small shadow-sm">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <div class="d-flex align-items-center gap-3 small">
+        <span><i class="bi bi-telephone"></i> +231 770 000 000</span>
+        <span><i class="bi bi-envelope"></i> info@gjsist.edu.lr</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a class="text-white" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a class="text-white" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a class="text-white" href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+  </header>
+
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top border-bottom">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top border-bottom">
     <div class="container">
-      <a class="navbar-brand text-gold fw-bold" href="index.html">GJSIST</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="images/logo.png" alt="" style="height:40px;width:auto;" class="d-inline-block align-text-top me-2" onerror="this.style.display='none'">
+        <span class="text-warning fw-bold h4 mb-0">GJSIST</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto fw-semibold">
           <li class="nav-item"><a class="nav-link text-blue" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-blue" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link text-blue" href="programs.html">Programs</a></li>
-          <li class="nav-item"><a class="nav-link text-blue" href="admissions.html">Admissions</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-blue" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="overview.html">Overview</a></li>
+              <li><a class="dropdown-item" href="about.html">About</a></li>
+              <li><a class="dropdown-item" href="founder-messages.html">Founder Messages</a></li>
+              <li><a class="dropdown-item" href="finance.html">Finance Office</a></li>
+              <li><a class="dropdown-item" href="registrar.html">Office of the Registrar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-blue" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+            <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+              <li><a class="dropdown-item" href="bachelor.html">Bachelor Programs</a></li>
+              <li><a class="dropdown-item" href="associate.html">Associate Programs</a></li>
+              <li><a class="dropdown-item" href="business.html">Business College</a></li>
+              <li><a class="dropdown-item" href="medical.html">Medical College</a></li>
+              <li><a class="dropdown-item" href="education.html">College of Education</a></li>
+              <li><a class="dropdown-item" href="library.html">Library</a></li>
+              <li><a class="dropdown-item" href="academic.html">Academic Calendar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-blue" href="#" id="admissionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
+            <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
+              <li><a class="dropdown-item" href="admissions.html">How to Apply</a></li>
+              <li><a class="dropdown-item" href="graduate.html">Entry Requirements</a></li>
+              <li><a class="dropdown-item" href="diploma.html">Admission Cut-Off Points</a></li>
+              <li><a class="dropdown-item" href="scholarships.html">Undergraduate Admissions</a></li>
+              <li><a class="dropdown-item" href="graduate.html">Graduate Admissions</a></li>
+              <li><a class="dropdown-item" href="diploma.html">International Applicants</a></li>
+              <li><a class="dropdown-item" href="admissions.html">Apply Now</a></li>
+            </ul>
+          </li>
           <li class="nav-item"><a class="nav-link active text-blue" href="portal.html">Portal</a></li>
           <li class="nav-item"><a class="nav-link text-blue" href="contact.html">Contact</a></li>
           <li class="nav-item"><a class="nav-link text-blue" href="gallery.html">Gallery</a></li>

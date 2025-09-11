@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Finance Office - Glory Joyce Stanley Institute of Science and Technology</title>
+  <title>Faculty & Staff - Glory Joyce Stanley Institute of Science and Technology</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Top Bar and Navbar (reuse from other pages) -->
+  <!-- Top Bar -->
   <header class="bg-blue text-white py-2 small shadow-sm">
     <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
       <div class="d-flex align-items-center gap-3 small">
@@ -23,10 +23,11 @@
       </div>
     </div>
   </header>
+
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top border-bottom">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-        <img src="images/logo.jpg" alt="GJSIST Logo" style="height:40px;width:auto;" class="d-inline-block align-text-top me-2" onerror="this.style.display='none'">
+        <img src="images/logo.jpg" alt="" style="height:40px;width:auto;" class="d-inline-block align-text-top me-2" onerror="this.style.display='none'">
         <span class="text-warning fw-bold h4 mb-0">GJSIST</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -41,7 +42,7 @@
               <li><a class="dropdown-item" href="overview.html">Overview</a></li>
               <li><a class="dropdown-item" href="about.html">About</a></li>
               <li><a class="dropdown-item" href="founder-messages.html">Founder Messages</a></li>
-              <li><a class="dropdown-item active" href="finance.html">Finance Office</a></li>
+              <li><a class="dropdown-item" href="finance.html">Finance Office</a></li>
               <li><a class="dropdown-item" href="registrar.html">Office of the Registrar</a></li>
             </ul>
           </li>
@@ -79,120 +80,110 @@
 
   <section class="py-5 bg-light">
     <div class="container">
-      <h1 class="text-blue fw-bold mb-4 text-center">Finance Office</h1>
-      <p class="lead text-center mb-5">Welcome to the Finance Office of GJSIST. Here you will find all information related to tuition, fees, payment methods, scholarships, and financial support for students and visitors.</p>
-      <div class="row g-4">
-        <div class="col-lg-8">
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title text-gold">Tuition & Fees</h5>
-                  <ul>
-                    <li>Undergraduate Tuition: <b>$XXX per semester</b></li>
-                    <li>Graduate Tuition: <b>$XXX per semester</b></li>
-                    <li>Registration Fee: <b>$XX (one-time)</b></li>
-                    <li>Other Fees: Library, Lab, Student Activities (see detailed schedule)</li>
-                  </ul>
-                  <a href="#" class="btn btn-outline-blue btn-sm mt-2">Download Full Fee Schedule</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title text-gold">Payment Methods</h5>
-                  <ul>
-                    <li>Bank Deposit (Account details available at the Finance Office)</li>
-                    <li>Mobile Money (Orange Money, MTN Mobile Money)</li>
-                    <li>Direct Payment at the Finance Office</li>
-                  </ul>
-                  <p class="mb-0">All payments should be made in the name of <b>Glory Joyce Stanley Institute of Science and Technology</b>.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title text-gold">Scholarships & Financial Aid</h5>
-                  <ul>
-                    <li>Merit-based Scholarships</li>
-                    <li>Need-based Financial Aid</li>
-                    <li>Special Grants for Women in STEM</li>
-                    <li>External Scholarships (contact office for details)</li>
-                  </ul>
-                  <a href="scholarships.html" class="btn btn-outline-blue btn-sm mt-2">Learn More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title text-gold">Contact the Finance Office</h5>
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-geo-alt-fill me-2"></i> Main Campus, Finance Office</li>
-                    <li><i class="bi bi-telephone-fill me-2"></i> +231-XXX-XXXXXX</li>
-                    <li><i class="bi bi-envelope-fill me-2"></i> finance@gjsist.edu.lr</li>
-                    <li><i class="bi bi-clock me-2"></i> Mon-Fri: 8:00am - 4:00pm</li>
-                  </ul>
-                  <a href="contact.html" class="btn btn-gold btn-sm mt-2">Contact Us</a>
-                </div>
+      <h1 class="text-blue fw-bold mb-5 text-center">Our Faculty & Staff</h1>
+      <div class="row g-4 justify-content-center" id="facultyGrid">
+        <!-- President -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="faculty-card card h-100 text-center shadow-sm" data-staff="president">
+            <img src="images/president.jpg" class="card-img-top faculty-img mx-auto mt-3" alt="University President">
+            <div class="card-body">
+              <h5 class="card-title text-gold">Dr. Gloria J. Stanley</h5>
+              <p class="card-subtitle text-muted mb-2">President</p>
+              <p class="faculty-summary">PhD, Educational Leadership<br>20+ years in higher education management</p>
+              <div class="faculty-details d-none">
+                <p>Dr. Stanley is the founding President of GJSIST, with a distinguished career in educational leadership, curriculum development, and institutional growth. She is passionate about empowering students and faculty to achieve excellence.</p>
               </div>
             </div>
           </div>
         </div>
-        <!-- FAQ Sidebar (no box, slimmer, more questions) -->
-        <aside class="col-lg-3 mt-4 mt-lg-0">
-          <div class="sticky-top" style="top: 100px;">
-            <h5 class="text-blue fw-bold mb-3">Finance FAQs</h5>
-            <div id="financeFAQSidebar">
-              <div class="faq-item mb-2">
-                <button class="btn btn-link text-start w-100 faq-toggle" type="button">How do I pay my fees?</button>
-                <div class="faq-answer collapse">Visit the Finance Office or use mobile money/bank deposit.</div>
-              </div>
-              <div class="faq-item mb-2">
-                <button class="btn btn-link text-start w-100 faq-toggle" type="button">Are there payment plans?</button>
-                <div class="faq-answer collapse">Yes, flexible payment plans are available. Inquire at the office.</div>
-              </div>
-              <div class="faq-item mb-2">
-                <button class="btn btn-link text-start w-100 faq-toggle" type="button">How do I apply for a scholarship?</button>
-                <div class="faq-answer collapse">See the Scholarships section or contact the office.</div>
-              </div>
-              <div class="faq-item mb-2">
-                <button class="btn btn-link text-start w-100 faq-toggle" type="button">What payment methods are accepted?</button>
-                <div class="faq-answer collapse">Bank deposit, mobile money, and direct payment at the Finance Office.</div>
-              </div>
-              <div class="faq-item mb-2">
-                <button class="btn btn-link text-start w-100 faq-toggle" type="button">Who do I contact for finance questions?</button>
-                <div class="faq-answer collapse">Contact the Finance Office at finance@gjsist.edu.lr or +231-XXX-XXXXXX.</div>
-              </div>
-              <div class="faq-item mb-2">
-                <button class="btn btn-link text-start w-100 faq-toggle" type="button">Can I pay my fees in installments?</button>
-                <div class="faq-answer collapse">Yes, installment plans are available. Please visit the Finance Office to arrange a plan.</div>
-              </div>
-              <div class="faq-item mb-2">
-                <button class="btn btn-link text-start w-100 faq-toggle" type="button">What happens if I miss a payment deadline?</button>
-                <div class="faq-answer collapse">Late payments may incur a penalty. Contact the Finance Office for assistance if you anticipate a delay.</div>
-              </div>
-              <div class="faq-item mb-2">
-                <button class="btn btn-link text-start w-100 faq-toggle" type="button">Are there discounts for early payment?</button>
-                <div class="faq-answer collapse">Occasionally, early payment discounts are offered. Check with the Finance Office for current offers.</div>
-              </div>
-              <div class="faq-item mb-2">
-                <button class="btn btn-link text-start w-100 faq-toggle" type="button">Can international students pay in foreign currency?</button>
-                <div class="faq-answer collapse">Yes, international students can pay in USD or other accepted currencies. Contact the office for details.</div>
-              </div>
-              <div class="faq-item mb-2">
-                <button class="btn btn-link text-start w-100 faq-toggle" type="button">How do I get a receipt for my payment?</button>
-                <div class="faq-answer collapse">Receipts are issued immediately after payment at the Finance Office or sent by email for mobile/bank payments.</div>
+        <!-- Vice President -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="faculty-card card h-100 text-center shadow-sm" data-staff="vp">
+            <img src="images/vp.jpg" class="card-img-top faculty-img mx-auto mt-3" alt="Vice President">
+            <div class="card-body">
+              <h5 class="card-title text-gold">Prof. Dwehee Patrick Sargbeh</h5>
+              <p class="card-subtitle text-muted mb-2">Vice President</p>
+              <p class="faculty-summary">MSc, Computer Science<br>Expert in digital transformation and academic innovation</p>
+              <div class="faculty-details d-none">
+                <p>Prof. Doe oversees academic affairs and technology integration at GJSIST. He has led several digital initiatives and is committed to advancing STEM education in Liberia.</p>
               </div>
             </div>
           </div>
-        </aside>
+        </div>
+        <!-- Registrar -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="faculty-card card h-100 text-center shadow-sm" data-staff="registrar">
+            <img src="images/registrar.jpg" class="card-img-top faculty-img mx-auto mt-3" alt="Registrar">
+            <div class="card-body">
+              <h5 class="card-title text-gold">Mrs. Linda B. Johnson</h5>
+              <p class="card-subtitle text-muted mb-2">Registrar</p>
+              <p class="faculty-summary">BA, Administration<br>10+ years in student services and records management</p>
+              <div class="faculty-details d-none">
+                <p>Mrs. Johnson manages student records and registration, ensuring a smooth academic experience for all students. She is known for her attention to detail and student-centered approach.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dean of Health Sciences -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="faculty-card card h-100 text-center shadow-sm" data-staff="dean-health">
+            <img src="images/dean_health.jpg" class="card-img-top faculty-img mx-auto mt-3" alt="Dean of Health Sciences">
+            <div class="card-body">
+              <h5 class="card-title text-gold">Dr. Isaac Mulbah</h5>
+              <p class="card-subtitle text-muted mb-2">Dean, College of Health Sciences</p>
+              <p class="faculty-summary">PhD, Medical Sciences<br>Expert in clinical research and public health</p>
+              <div class="faculty-details d-none">
+                <p>Dr. Mulbah leads the College of Health Sciences, bringing years of experience in medical education and research. He is dedicated to advancing healthcare training in Liberia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dean of Business College -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="faculty-card card h-100 text-center shadow-sm" data-staff="dean-business">
+            <img src="images/dean_business.jpg" class="card-img-top faculty-img mx-auto mt-3" alt="Dean of Business College">
+            <div class="card-body">
+              <h5 class="card-title text-gold">Prof. Kulubo Kessellee</h5>
+              <p class="card-subtitle text-muted mb-2">Dean, Business College</p>
+              <p class="faculty-summary">MBA, Business Administration<br>Specialist in entrepreneurship and digital marketing</p>
+              <div class="faculty-details d-none">
+                <p>Prof. Kessellee oversees the Business College, focusing on innovative business education and student entrepreneurship. She has mentored many successful graduates.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dean of Education -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="faculty-card card h-100 text-center shadow-sm" data-staff="dean-education">
+            <img src="images/dean_education.jpg" class="card-img-top faculty-img mx-auto mt-3" alt="Dean of Education">
+            <div class="card-body">
+              <h5 class="card-title text-gold">Mr. George Lincoln</h5>
+              <p class="card-subtitle text-muted mb-2">Dean, College of Education</p>
+              <p class="faculty-summary">MEd, Curriculum & Instruction<br>Leader in teacher training and curriculum design</p>
+              <div class="faculty-details d-none">
+                <p>Ms. Lincoln directs the College of Education, with a passion for teacher development and innovative learning strategies. She is a champion for quality education in Liberia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Librarian -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="faculty-card card h-100 text-center shadow-sm" data-staff="librarian">
+            <img src="images/librarian.jpg" class="card-img-top faculty-img mx-auto mt-3" alt="Librarian">
+            <div class="card-body">
+              <h5 class="card-title text-gold">Mr. Daniel K. Smith</h5>
+              <p class="card-subtitle text-muted mb-2">Librarian</p>
+              <p class="faculty-summary">MLS, Library Science<br>Expert in digital resources and academic support</p>
+              <div class="faculty-details d-none">
+                <p>Mr. Smith manages the GJSIST library, supporting students and faculty with research and digital resources. He is committed to fostering a culture of learning.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-
+<!--Footer Section-->
   <footer class="footer bg-dark text-light pt-5 mt-5 border-top">
     <div class="container">
       <div class="row">
