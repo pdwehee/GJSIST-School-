@@ -25,7 +25,7 @@
 /* Hero Button Glow and Visibility */
 .btn-hero-glow {
   border: 3px solid #fff !important;
-  box-shadow: 0 0 16px 4px #43e97b, 0 0 32px 8px #1976d2;
+  box-shadow: #9CD3D9
   filter: drop-shadow(0 0 8px #1976d2cc);
   background: linear-gradient(90deg,#43e97b 60%,#1976d2 100%) !important;
   color: #fff !important;
@@ -1113,3 +1113,4 @@ footer hr {
     margin-bottom: 1.5rem;
   }
 }
+
